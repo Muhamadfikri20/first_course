@@ -25,7 +25,20 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.orange,
+        title: Text(
+          "First Course",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        actions: [
+          Icon(Icons.settings),
+          Icon(Icons.logout),
+        ],
+      ),
     );
   }
 }
